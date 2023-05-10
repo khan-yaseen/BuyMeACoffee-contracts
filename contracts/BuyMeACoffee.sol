@@ -69,6 +69,10 @@ contract BuyMeACoffee {
         );
     }
 
+    function updateWithdralAddress(address _to) public {
+        owner = payable(_to);
+    }
+
     /**
      * @dev send the entire balance stored in this contract to the owner
      */
